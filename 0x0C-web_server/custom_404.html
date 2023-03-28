@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Material -->
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <meta charset="utf-8">
+  <title>404 Page Not Found</title>
+<style>
+  html {
+  box-sizing: border-box;
+}
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #5c5c5c;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: space-between;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h1 {
+    color: #555;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+  }
+  p {
+    color: #888;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+    font-size: 0.8em;
+    color: #888;
+    border-top: rgb(243, 241, 241) solid 2px;
+    padding-top: 10px;
+  }
+  small {
+    padding: 10px;
+  }
+  .my-card {
+  width: 350px;
+  margin: 20px;
+  padding: 20px;
+  }
+  .mdc-top-app-bar {
+    background-color: #000;
+  }
+</style>
+</head>
+<body>
+  <header class="mdc-top-app-bar">
+    <div class="mdc-top-app-bar__row">
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
+        <span class="mdc-top-app-bar__title">xelar.tech</span>
+      </section>
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+        <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Favorite">favorite</button>
+        <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search">search</button>
+        <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Options">more_vert</button>
+      </section>
+    </div>
+  </header>
+  <main class="mdc-top-app-bar--fixed-adjust">
+
+    <div class="my-card mdc-card"> <!-- Card -->
+      <div class="mdc-card__primary-action" tabindex="0">
+        <!-- content within actionable area -->
+        <h1>Page Not Found</h1>
+        <div class="mdc-card__ripple"></div>
+      </div>
+      <!-- ... content ... -->
+      <p>Ceci n'est pas une page</p>
+      <p>Sorry, but the page you were trying to view does not exist.</p>
+      <div class="mdc-card__actions"><!-- Card actions -->
+        <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
+           aria-pressed="false"
+           aria-label="Add to favorites"
+           title="Add to favorites">
+         <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">favorite</i>
+         <i class="material-icons mdc-icon-button__icon">favorite_border</i>
+        </button>
+        <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="Share">share</button>
+        <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="More options">more_vert</button>
+      </div><!-- Card actions -->
+    </div> <!-- Card -->
+
+  </main>
+  <footer>
+    <small>&copy; 1980-2022 xelar.tech</small>
+  </footer>
+</body>
+
+</html>
+<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->
